@@ -44,7 +44,7 @@ const FeedCard = () => {
           </div>
 
           {/* Question */}
-          <h3 className="text-xl font-black leading-tight text-white line-clamp-2 min-h-[3rem]">
+          <h3 className="text-xl font-black leading-tight text-white line-clamp-2 min-h-12">
             {market.question}
           </h3>
 
