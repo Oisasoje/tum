@@ -129,3 +129,90 @@ export const activities: Activity[] = [
     amount: "500 TUM",
   },
 ];
+
+export interface UserProfile {
+  username: string;
+  avatar: string;
+  walletAddress: string;
+  balance: number;
+  accuracy: number;
+  totalPredictions: number;
+  totalWinnings: number;
+}
+
+export const userProfile: UserProfile = {
+  username: "Alex Crypto",
+  avatar: "/pfp.jpg",
+  walletAddress: "0x123...abc",
+  balance: 45.5,
+  accuracy: 68,
+  totalPredictions: 124,
+  totalWinnings: 1200,
+};
+
+export interface UserActiveMarket {
+  id: string;
+  question: string;
+  side: "YES" | "NO";
+  stake: number;
+  timeLeft: string;
+}
+
+export const userActiveMarkets: UserActiveMarket[] = [
+  {
+    id: "am1",
+    question: "Will Bitcoin (BTC) hit $100,000 by Jan 1, 2026?",
+    side: "YES",
+    stake: 50,
+    timeLeft: "15h left",
+  },
+  {
+    id: "am2",
+    question: "Will Neuralink achieve human implantation by 2025?",
+    side: "NO",
+    stake: 25,
+    timeLeft: "3d left",
+  },
+];
+
+export interface UserHistoryMarket {
+  id: string;
+  question: string;
+  result: "WIN" | "LOSS";
+  amount: number;
+}
+
+export const userHistory: UserHistoryMarket[] = [
+  {
+    id: "hm1",
+    question: "Will ETH reach $4000 in Q1 2025?",
+    result: "WIN",
+    amount: 150,
+  },
+  {
+    id: "hm2",
+    question: "Will SpaceX launch Starship successfully in March?",
+    result: "LOSS",
+    amount: -30,
+  },
+  {
+    id: "hm3",
+    question: "Will AI act passed in EU by 2024?",
+    result: "WIN",
+    amount: 85,
+  },
+];
+
+export interface Friend {
+  id: string;
+  name: string;
+  avatar: string;
+}
+
+export const friends: Friend[] = [
+  { id: "f1", name: "josh_d", avatar: "/pfp.jpg" },
+  { id: "f2", name: "sarah_k", avatar: "/pfp.jpg" },
+  { id: "f3", name: "mike_trade", avatar: "/pfp.jpg" },
+  { id: "f4", name: "elena_eth", avatar: "/pfp.jpg" },
+  { id: "f5", name: "david_web3", avatar: "/pfp.jpg" },
+];
